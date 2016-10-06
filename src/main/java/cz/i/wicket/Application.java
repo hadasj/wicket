@@ -10,6 +10,6 @@ public class Application extends WebApplication {
 
   @Override
   public Class<? extends Page> getHomePage() {
-    return HelloPage.class;
+    return Index.class;
   }
 }
