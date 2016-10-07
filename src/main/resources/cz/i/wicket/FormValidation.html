@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org">
+<head>
+  <title>Wicket Examples - form validation</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+<h2>*** Form validation ***</h2>
+<form wicket:id="form">
+  <label for="text">Text:</label>
+  <input type="text" wicket:id="text" id="text" value="" size="40" />
+  <br/>
+  <div title="Integer in range 1 .. 100">
+    <label for="number">Číslo:</label>
+    <input type="text" wicket:id="number" id="number" value="" size="40" />
+  </div>
+  <br/>
+  <input type="submit" value="Odeslat" />
+</form>
+
+<div id="feedbackPanel">
+  <span wicket:id="feedback" id="msg" title="dxxx">[Feedback panel]</span>
+</div>
+
+<div id="displaySection">
+  Vložený text: [<span wicket:id="textOutput" id="text.output">[text]</span>]<br>
+  Zpracovaný vstup: [<span wicket:id="output" id="output">[Zpetna vazba II]</span>]
+</div>
+
+</body>
+</html>
