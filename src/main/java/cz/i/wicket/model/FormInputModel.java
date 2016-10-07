@@ -32,7 +32,10 @@ public class FormInputModel {
       output += trim(text);
     }
     if (number != null) {
-      output += ", " + number;
+      if (isNotEmpty(text)) {
+        output += ", ";
+      }
+      output += number;
     }
     return output;
   }
