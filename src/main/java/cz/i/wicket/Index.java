@@ -18,7 +18,8 @@ public class Index extends WebPage {
 
   public Index () {
 
-    final List<Class<? extends WebPage>> pages = asList(HelloPage.class, SimpleForm.class, FormValidation.class);
+    final List<Class<? extends WebPage>> pages = asList(HelloPage.class, SimpleForm.class, FormValidation.class,
+        Eshop.class);
 
     add(new ListView("pagesList", pages) {
 

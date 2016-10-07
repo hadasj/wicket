@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.3-strict.dtd"
+      xml:lang="en" lang="en">
+
+<body>
+<h2>*** Cukrárna ***</h2>
+<form wicket:id="form">
+  <table>
+    <tr>
+      <td>Medovník             - cena 200,-Kč</td>
+      <td>&nbsp;</td>
+      <td><input type="text" wicket:id="honeyCake" id="honeyCake" value="0" size="4" /></td>
+    </tr>
+
+    <tr>
+      <td> Čokoládový dort      - cena 135,-Kč</td>
+      <td>&nbsp;</td>
+      <td><input type="text" wicket:id="chocolateCake" id="chocolateCake" value="0" size="4" /></td>
+    </tr>
+
+    <tr>
+      <td> Borůvkový koláček    - cena  45,-Kč</td>
+      <td>&nbsp;</td>
+      <td><input type="text" wicket:id="blueberryPie" id="blueberryPie" value="0" size="4" /></td>
+    </tr>
+    <tr>
+      <td> Marcipánový zákusek  - cena  25,-Kč</td>
+      <td>&nbsp;</td>
+      <td><input type="text" wicket:id="marzipanCake" id="marzipanCake" value="0" size="4" /></td>
+    </tr>
+    <tr>
+      <td> Skořicový šnek       - cena  15,-Kč</td>
+      <td>&nbsp;</td>
+      <td><input type="text" wicket:id="cinnamonSnail" id="cinnamonSnail" value="0" size="4" /></td>
+    </tr>
+  </table>
+  <br/>
+  <input type="submit" value="Objednat" />
+</form>
+
+<div id="feedbackPanel">
+  <span wicket:id="feedback" id="msg" title="dxxx">[Feedback panel]</span>
+</div>
+
+<br/><br/>
+<div id="displaySection">
+  <span wicket:id="output" id="message">[Message goes here]</span>
+</div>
+
+</body>
+</html>
